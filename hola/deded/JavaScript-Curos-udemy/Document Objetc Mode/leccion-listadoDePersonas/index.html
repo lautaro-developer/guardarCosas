@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body id="mostrarPersonas">
+    <div class="contenedor" id="cabecero">
+      <h1>listado de personas</h1>
+    </div>
+
+    <div class="contenedor">
+      <div class="elemento">
+        <ul id="personas">
+          <!-- <li>Ruben</li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="divBtn">
+        <button class="btn" id="mostrarPersona">+</button>
+      </div>
+      <form id="form">
+        <input type="text" id="nombre" placeholder="Su nombre..." />
+        <input type="text" id="apellido" placeholder="Su apellido..." />
+        <input type="number" id="dni" placeholder="Su dni..." />
+      </form>
+    </div>
+    <div class="contenedor">
+      <div id="resibido"></div>
+    </div>
+  </body>
+
+  <script src="js/persona.js"></script>
+  <script src="js/app.js"></script>
+</html>

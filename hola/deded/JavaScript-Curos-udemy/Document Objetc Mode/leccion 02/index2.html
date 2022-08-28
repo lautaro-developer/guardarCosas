@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+     <h1 onclick="cambiarText(this)" id="h1">Saludos desde JS desde el HTML</h1> <!-- el tag h1 es un obj por ende tiene atributo y metodo -->
+
+    <!-- <button onclick="mostrarCambio()"> < </button> -->
+    <br/>
+    <br/>
+    <img id="img" onclick="this" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F2.bp.blogspot.com%2F-62nnnwtN9lI%2FUoM3FOMhl2I%2FAAAAAAAANVM%2FI9yVDNP19ag%2Fw1200-h630-p-k-no-nu%2FGTA-Game-Logo-1.jpg&f=1&nofb=1" width="400px"/>
+  </body>
+
+  <script>
+    function mostrarCambio() {
+        /* 
+        //para editar un testo se usa innerHTML = 'nuevo texto'
+        //+= se puede imprimir el texto editado pero se mantiene el original
+        document.getElementById('titulo').innerHTML += '<br/> New title';
+        
+
+        // para que al dar click a un boton se ccambien la img 
+        // se cambia la direccion de la img con .src
+        document.getElementById('img').src = 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2F8hDkMC-qHt0%2Fmaxresdefault.jpg&f=1&nofb=1'
+        */
+
+        // se puede modificar los estlos con style y la propiedad que se modifica
+        // document.getElementById('titulo').style.color = 'red'
+    }
+    function cambiarText(texto){ // se pasa como parametro this
+        texto.innerHTML = 'nuevoValor'// cambiar valor
+        console.log(texto); // apunta a el elemento h1
+        document.getElementById('h1').style.color='red'
+    }
+
+    function cambiarImg(img){
+        img = document.getElementById('img')
+        img.style.transform = 'scale(1.9)'
+
+    }
+  </script>
+
+</html>

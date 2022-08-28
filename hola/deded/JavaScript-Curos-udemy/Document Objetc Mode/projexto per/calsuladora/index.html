@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contenedor">
+        <h1>Calculadora</h1>
+      <form id="form">
+        <div id="separar">
+          <label for="operando1">operando1:</label>
+          <input
+            type="number"
+            id="operando1"
+            placeholder="pon un numero..."
+            value="2"
+            min="0"
+          />
+        </div>
+        <div class="separar">
+          <label for="operando2">operando2:</label>
+          <input
+            type="number"
+            id="operando2"
+            placeholder="pon un numero..."
+            value="2"
+            min="0"
+          />
+        </div>
+      </form>
+      <div class="enviar">
+        <a href="#" class="css" id="suma">Sumar +</a>
+        <a href="#" class="css" id="resta">Restar -</a>
+        <a href="#" class="css" id="multi">Multiplicar ×</a>
+        <a href="#" class="css" id="div">Dividir /</a>
+        <a href="#" class="css" id="residuo">Residuo %</a>
+      </div>
+      <div id="resultado"></div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

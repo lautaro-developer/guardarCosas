@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>onfocus</h1>
+    <br />
+    <form id="form">
+      Nombre: <input type="text" id="nombre" /> <br /><br />
+      Apellido: <input type="text" id="apellido" />
+    </form>
+  </body>
+  <script>
+    /*
+      no funciona el onfocus ni onblur pasando a otro input
+    let nombre = document.getElementById("nombre");
+    nombre.onfocus = nombreFocus;
+    function nombreFocus() {
+      document.getElementById("nombre").style.background = "red";
+      document.getElementById("nombre").style.color = "white";
+    }
+   
+    nombre.onblur = nombreBlur;
+    function nombreBlur() {
+      document.getElementById("nombre").style.background = "blue";
+      document.getElementById("nombre").style.color = "black";
+    }
+    
+    // acceder desde un this en el input
+    function prender(prender){
+        prender.style.background = 'red'
+    }
+    function apagar(apagar){
+        apagar.style.background = 'blue'
+    }
+    
+    // metodo con addEventListener
+    
+    // nombre
+    // funcion flecha
+    document.getElementById('nombre').addEventListener('focus', (evento) => {
+        let prender = evento.target;
+        prender.style.background = 'orange'
+    })
+    document.getElementById('nombre').addEventListener('blur', (evento) => {
+        let apagar = evento.target;
+        apagar.style.background = 'green'
+    })
+    
+    // apellido
+    document.getElementById('apellido').addEventListener('focus', prender)
+    document.getElementById('apellido').addEventListener('blur', apagar)
+    
+    function prender(evento){
+        let prender = evento.target;
+        prender.style.background = 'red';
+    }
+    function apagar(evento){
+        let apagar = evento.target;
+        apagar.style.background = 'blue';
+    }
+    */
+
+    // aplicar el estilos a todos los elementos que esten dentro del form
+    // se tiene que crear una variable que llame al formulario
+    const formulario = document.getElementById("form");
+    formulario.addEventListener(
+      "focus",
+      (evento) => {// se crea la funcion flecha
+        let prender = evento.target;
+        prender.style.background = "orange";
+      },
+    //   para que funcione hay que poner true 
+      true // se pune true para que los cambios apliquen dendro del tag form
+    );
+    formulario.addEventListener(
+      "blur",
+      (evento) => {
+        let apagar = evento.target;
+        apagar.style.background = "green";
+      },
+      true
+    );
+  </script>
+</html>

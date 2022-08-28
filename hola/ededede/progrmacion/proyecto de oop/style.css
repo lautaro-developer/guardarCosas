@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&family=Staatliches&display=swap');
+body{
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 20px;
+}
+
+#btn-submit {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.style{
+  margin: 0 0 0 100px;
+  float: left;
+  width: 500px;
+}
+
+#lista-de-productor{
+  margin: 0 100px 0 0;
+  float: right;
+  border: none;
+  background-color: transparent;
+}
+
+.card-header-js{
+  width: 100%;
+  margin: 0;
+}
+
+.card-border-js{
+  /* border: none; */
+  width: 500px;
+  margin: 0;
+
+}
+
+.negro{
+  background-color: transparent;
+}
+
+#btnEliminarElemento{
+  color: #fff;
+  background-color: #000000;
+  border: 2px solid #fff;
+  border-radius: 20px;
+
+  float: right;
+}
+#btnEliminarElemento:hover{
+  background-color: red;
+  color: white;
+}
+
+.h1{
+  font-size: x-large;
+  margin: 0 auto;
+  border-bottom: solid white;
+}

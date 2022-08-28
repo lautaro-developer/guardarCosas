@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 onmouseout="dejar(this)" onmouseover="rojo(this)">HolaMundo</h1>
+    <br />
+    Nombre: <input type="text" id="nombre" onchange="mayus(this)" />
+    <br />
+    <br />
+    <button id="captura">Captura de pantalla ></button>
+    <!-- <button id="portada">Portada < </button> -->
+    <br />
+    <img src="batman1.png" alt="" id="img" />
+</body>
+<script>
+/*let nuevo = 'nuevoTitulo'
+
+      // se da que id hay que dar click y manda una funcion
+      document.getElementById('link').onclick = cambiarTitulo;
+      document.getElementById('boton').onclick = cambiarTitulo2;
+
+      function cambiarTitulo(){
+          // se esprecifica con el id que elemento combia y se le da un nuevo valor con string
+          document.getElementById('contenedor').innerHTML = 'Nuevo titulo';
+          document.getElementById('boton').innerHTML = 'nuevoBoton';
+      }
+      function cambiarTitulo2(){
+          // se puede utilizar funciones
+          document.getElementById('titulo').innerHTML = nuevo;
+      }
+
+
+      //    elemento onload, se ejecuta cuando termina de cargar la pagina web
+      document.getElementById('body').onload = cambiarBody
+      function cambiarBody(){
+          alert('Hola');
+          let texto = null;
+          // con navigator le preguntamos al navegador, como por ejemplo si el user si el user tiene las cookie activas
+          if(navigator.cookieEnabled){
+              texto = 'Activas'
+          }
+          else{
+              texto = 'Inactivas'
+          }
+          document.getElementById('contenedor').innerHTML = texto;
+      }
+
+      // as el texto en mayusculas
+      function mayus(mayus){
+          mayus.value = mayus.value.toUpperCase();
+      }
+      */
+
+function rojo(titulo) {
+    titulo.style.color = "red";
+}
+
+function dejar(deja) {
+    deja.style.color = "black";
+}
+/*
+      let captura1 = 'batman1'
+      // multples imagenes
+    document.getElementById('captura').onclick = capturaAlert
+    
+    function capturaAlert(){
+        let imagen = document.getElementById('img');
+        if(captura1=='batman1'){
+          imagen.src = 'batman2.png'
+          captura1 = 'batman2'
+        }
+        else{
+          imagen.src = 'batman1.png'
+          captura1 = 'batman1'
+        }
+      }
+      */
+</script>
+
+</html>

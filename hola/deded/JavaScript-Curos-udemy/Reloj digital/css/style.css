@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+#reloj{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 60px;
+	text-shadow: 0px 0px 1px #333;
+	color: #ffff;
+}
+/* 
+h1{
+	color: red;
+} */
+.reloj-contenedor{
+	background-color: #1E23EC;
+	padding: 25px;
+	max-width: 550px; /* poner 350 por las moscas */
+	text-align: center;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+#fecha{
+	letter-spacing: 10px;
+	font-size: 15px;
+}
+
+#hora{
+	padding: 20px;
+}

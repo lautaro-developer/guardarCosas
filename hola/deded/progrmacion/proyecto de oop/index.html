@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h1 class="h1">App de produtos</h1>
+    </nav>
+    <div class="container">
+        <div id="app" class="table table-hover"></div>
+    </div>
+    <div class="card border-primary mb-3, style" style="max-width: 20rem;">
+        <div class="card-header">Agregar productos</div>
+        <div class="card-body">
+            <form id="form del producto" class="formDelProducto">
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Producto</label>
+                    <input type="text" class="form-control" placeholder="Nombre del producto" id="nombre" > 
+                </div>
+                <!-- <br> -->
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Precio</label>
+                    <input type="number" class="form-control" placeholder="Precio del producto" id="precio" value="1500">
+                </div>
+                <!-- <br> -->
+                <div class="form-group">
+                    <label class="col-form-label mt-4" for="inputDefault">Precio</label>
+                    <input type="text" class="form-control" placeholder="Año de creacion" id="año" value="2000">
+                </div>
+                <input value="Enviar" type="submit" id="btn-submit" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+    <div id="lista-de-productor" class="card border-primary mb-3">
+        <div class="negro" id="negro">
+            
+        </div>
+    </div>
+    </div>
+
+    <script src="EjercicioDeOOP.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.contenedor {
+  /* background-color: red; */
+  max-width: 100px;
+  height: 100px;
+  display: grid;
+}
+.resultado {
+  background-color: aqua;
+  height: 100%;
+}
+
+.teclas {
+  background-color: rgb(179, 179, 179);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+}
+
+.operadores-de-arriba{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 230px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.clean{
+    background-color: aqua;
+}
+
+.parentecis{
+    background-color: aqua;
+}
+
+.residuo{
+    background-color: aqua;
+}
+
+.multi{
+    background-color: aqua;
+}
+
+.numero{
+    background-color: red;
+}
